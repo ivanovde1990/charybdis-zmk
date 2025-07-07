@@ -21,4 +21,70 @@ combos {
   COMBO(r_leftclick, &mkp LCLK, 17 18, BASE, COMBO_TERM_SLOW)
   COMBO(r_rightclick, &mkp RCLK, 27 28, BASE, COMBO_TERM_SLOW)
   COMBO(r_middleclick, &mkp MCLK, 26 27, BASE, COMBO_TERM_SLOW)
+
+  combo_01 {
+      timeout-ms = <30>;
+      key-positions = <0 1>;
+      bindings = <&kp GRAVE>;
+  };
+
+  combo_rt {
+      timeout-ms = <30>;
+      key-positions = <3 4>;
+      bindings = <&kp LBKT>;
+  };
+
+  combo_yu {
+      timeout-ms = <30>;
+      key-positions = <7 8>;
+      bindings = <&kp RBKT>;
+  };
+
+  combo_fg {
+      timeout-ms = <30>;
+      key-positions = <15 16>;
+      bindings = <&kp LBRC>;
+  };
+
+  combo_hj {
+      timeout-ms = <30>;
+      key-positions = <19 20>;
+      bindings = <&kp RBRC>;
+  };
+
+  combo_vb {
+      timeout-ms = <30>;
+      key-positions = <27 28>;
+      bindings = <&kp PIPE>;
+  };
+
+  combo_nm {
+      timeout-ms = <30>;
+      key-positions = <31 32>;
+      bindings = <&kp BSLH>;
+  };
+
+  combo_10_11 {
+      timeout-ms = <30>;
+      key-positions = <10 11>;
+      bindings = <&kp DEL>;
+  };
+
+  combo_bt_clear {
+      timeout-ms = <150>;
+      key-positions = <0 6 7 8 9>;
+      bindings = <&bt BT_CLR>;
+  };
+
+  combo_bt_sel0 {
+      timeout-ms = <150>;
+      key-positions = <1 6 7 8 9>;
+      bindings = <&bt BT_SEL 0>;
+  };
+
+  combo_bt_sel1 {
+      timeout-ms = <150>;
+      key-positions = <2 6 7 8 9>;
+      bindings = <&bt BT_SEL 1>;
+  };
 }; 
